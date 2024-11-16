@@ -177,7 +177,7 @@ DRYRUN=
 NETWORK=localnet
 VERBOSE=false
 NOBUILD=false
-EXPOSEAPIS=false
+EXPOSEAPIS=true
 LEGACY_SYNC=false
 
 while getopts "hD:m:s:nBN:veL:" option; do

@@ -18,7 +18,7 @@ const (
 	Blockchain = "Harmony"
 
 	// NativeSymbol ..
-	NativeSymbol = "ONE"
+	NativeSymbol = "ITC"
 
 	// NativePrecision in the number of decimal places
 	NativePrecision = 18
