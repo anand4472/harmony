@@ -71,8 +71,8 @@ function launch_localnet() {
   else
     verbosity=3
   fi
-
-  base_args=(--log_folder "${log_folder}" --min_peers "${MIN}" --bootnodes "${BN_MA}" --p2p.muxer "yamux" \
+BN_MB="/ip4/139.59.70.169/tcp/19876/p2p/QmNfFY6vidQeejnqRbqGAKoQsULU5gNj62JngUdGxdFN63"
+  base_args=(--log_folder "${log_folder}" --min_peers "${MIN}" --bootnodes "${BN_MB},${BN_MA}" --p2p.muxer "yamux" \
     "--network=$NETWORK" --blspass file:"${ROOT}/.hmy/blspass.txt" \
     "--verbosity=${verbosity}" "--p2p.security.max-conn-per-ip=100")
   if [ "${LEGACY_SYNC}" == "true" ]; then
